@@ -20,7 +20,7 @@ WORKDIR /sbrest0722
 COPY --from=builder /sbrest0722/target/*.jar sbrest0722.jar
 
 # 容器啟動時執行 JAR，並明確指定使用 prod Profile
-ENTRYPOINT ["java", "-jar", "sbrest0810.jar"]
+ENTRYPOINT ["java", "-jar", "sbrest0722.jar"]
 
 # 宣告服務使用的 port（Render 預設讀取此值）
 EXPOSE 8080
